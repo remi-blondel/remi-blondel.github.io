@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Rémi Blondel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/lightbox2/dist/css/lightbox.min.css">
+</head>
+
+<body>
+<header>
+    <div class="container text-center">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Acceuil</a></li>
+                        <li><a href="#competences">Compétences</a></li>
+                        <li><a href="#experience">Expérience</a></li>
+                        <li><a href="#formation">Formation</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#projets">Projets</a></li>
+                        <li><a href="#loisirs">Loisirs</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <button id="btnVision" type="button" value="Jour" class="btn btn-default navbar-btn" onclick="changeVision()"><span id="visionMode">Nuit</span></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="topannels">
+        <div class="topannel1">
+            <h1 id="name">Rémi Blondel</h1>
+        </div>
+        <img src="images/pp2.png" id = "identite" class="img-center" alt="Photo de Rémi Blondel">
+        <div class="topannel2">
+            <h2>
+                Étudiant en École d'Ingénieur spécialisée en Informatique (CESI.EXIA)
+            </h2>
+            <p>
+                Issu d'un baccalauréat scientifique, j'étudie maintenant en deuxième année à l'école d'ingénieur CESI Exia, spécialisée dès la première année dans les technologies de l'information.
+            </p>
+            <p>
+                Je suis constamment ouvert à de nouvelles opportunités de stages en priorité dans le domaine des systèmes et réseaux. Cependant je reste attentif à toute autre proposition pertinente au regard de mes compétences.
+            </p>
+        </div>
+        <div class="contactpannel">
+            <ul>
+                <li>
+                    <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:remi.blondel@viacesi.fr">remi.blondel@viacesi.fr</a>
+                </li>
+                <li>
+                    <span class="glyphicon glyphicon-earphone"></span> <a href="tel:0631421257"> 06 31 42 12 57</a>
+                </li>
+                <li>
+                    <img src="images/in1.png" id = "contact" alt="icon"> <a href="https://www.linkedin.com/in/rblondel">linkedin.com/in/rblondel</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+    <div id="allcontent">
+        <div class="mainsection">
+            <div class="container-fluid containerlevel1">
+                <div class="rubrique">
+                    <div class="row">
+                        <img src="images/skill.png" class="img-center media-object" alt="icon">
+                    </div>
+                    <h2 id="competences">
+                        COMPETENCES :
+                    </h2>
+                    <div class="row padding3 vertical-align">
+                        <div class="col-xs-12 col-sm-2">
+                            <h3 class="media-heading">Réseau</h3><img class="media-object img-center centreVerticalement" src="images/networking.png" alt="icon">
+                        </div>
+                        <div class="col-xs-12 col-sm-10">
+                            <div class="panel-group l3content" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading1">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1">Fondamentaux du TCP/IP</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                                        <div class="panel-body">
+                                            Je suis familier avec la suite des principaux protocoles utilisant le TCP/IP. Les modèles en couches (OSI et TCP/IP) sont des notions que je maitrise parfaitement.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading2">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                                Switching / Routing / Sécurité
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                                        <div class="panel-body">
+                                            Grâce aux projets de conception de réseaux proposés au sein de mon école et aux cours préparant au passage de la certification CISCO CCNA je suis familier avec l’environnement CISCO. Je maitrise une grande partie des fontionnalités des switchs et routeurs (VLANS, Trunking, HSRP, Etherchannel, Spanning-Tree, Routage Statique/Dynamique/Inter-VLANs etc...). Je possède également les connaissances nécessaires pour implémenter une certaine sécurité au sein d'un réseau (ACL Standard/Étendues, NAT/PAT, Port-Security, SSH...).
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading3">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                                Divers
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                                        <div class="panel-body">
+                                            Je suis capable de concevoir une architecture réseau parfaitement redondante tout en prenant en compte les besoins émis par l'entreprise et en sélectionnant le matériel adéquat. Je possède également les bases de la technologie WLAN (normes, protocoles et méthodes d'authentification).
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row padding3 vertical-align">
+                        <div class="col-sm-2">
+                            <h3 class="media-heading">Langages</h3><img class="media-object img-center" src="images/laptop.png" alt="icon">
+                        </div>
+                        <div class="col-sm-10">
+                            <div class="media-body l3content">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <aside>
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
+                                                        <span class="language">C</span><span class="sr-only">60% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                                        <span class="language">C#</span><span class="sr-only">60% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                                        <span class="language">JAVA</span><span class="sr-only">60% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                                        <span class="language">SQL</span><span class="sr-only">60% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                                                        <span class="language">Bash</span><span class="sr-only">60% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+                                                        <span class="language">PowerShell</span><span class="sr-only">60% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+                                                        <span class="language">HTML/CSS</span><span class="sr-only">60% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+                                                        <span class="language">PHP</span><span class="sr-only">60% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+                                                        <span class="language">JavaScript</span><span class="sr-only">60% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </aside>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row padding3">
+                        <div class="col-sm-2">
+                            <h3 class="media-heading">Bases de Données</h3><img class="media-object img-center" src="images/database.png" alt="icon">
+                        </div>
+                        <div class="col-sm-10">
+                            <div class="media-body textcontent l3content">
+                                <div class="well well-sm">
+                                    Systèmes de Gestion de Bases de données déjà utilisés :
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <img src="images/sqlserver.png" class="img-responsive img-center" alt="icon">
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <img src="images/mysql.png" class="img-responsive img-center" alt="icon">
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <img src="images/access.png" class="img-responsive img-center" alt="icon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="well well-sm">Connaissances de base en conception de bases de données : Méthode Merise</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row padding3">
+                        <div class="col-sm-2">
+                            <h3 class="media-heading">Systèmes</h3><img class="media-object img-center" src="images/server.png" alt="icon">
+                        </div>
+                        <div class="col-sm-10">
+                            <div class="media-body textcontent l3content">
+                                <div class="well well-sm">
+                                    Systèmes étudiés :
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <img src="images/linux.png" class="img-responsive img-center" alt="icon">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <img src="images/windows.png" class="img-responsive img-center" alt="icon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="well well-sm">Configuration basique de serveurs (WEB, DNS, DHCP, FTP)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid containerlevel1">
+                <div class="rubrique">
+                    <div class="row">
+                        <img src="images/suitcase.png" class="img-center media-object" alt="icon">
+                    </div>
+                    <div class="row">
+                        <h2 id="experience">
+                            EXPERIENCE :
+                        </h2>
+                    </div>
+                    <div class="row vertical-align">
+                        <div class="col-sm-12 col-md-3 logocompany">
+                            <img src="images/merck.png" class="img-responsive img-center auto-resize" alt="icon">
+                        </div>
+                        <div class="col-sm-12 col-md-9">
+                            <h4>
+                                <span class="date">Septembre 2016 → 2 Mois</span>
+                                Stage Crédit et Recouvrement, Merck<BR>Amsterdam, Pays-Bas
+                            </h4>
+                            <ul>
+                                <li>
+                                    Analyse du compte client pour comprendre/corriger les erreurs gênant le paiement
+                                </li>
+                                <li>
+                                    Prospection des détails de paiement auprès du client pour le lettrage des factures
+                                </li>
+                                <li>
+                                    Ciblage et approche des clients (e-mail/téléphone) pour procéder au recouvrement
+                                </li>
+                                <li>
+                                    Réponse aux demandes et interrogations diverses des clients
+                                </li>
+                            </ul>
+                            <h5>
+                                <span class="italique">Détails Supplémentaires:</span>
+                            </h5>
+                            <ul>
+                                <li>
+                                    Collaborateurs et clientelle Anglophone
+                                </li>
+                                <li>
+                                    Environnement de travail: ERP sous ORACLE, suite Office, CRM (salesforce.com)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row vertical-align">
+                        <div class="col-sm-12 col-md-3 logocompany">
+                            <img src="images/cenfe.png" class="img-responsive img-center auto-resize" alt="icon">
+                        </div>
+                        <div class="col-sm-12 col-md-9">
+                            <h4>
+                                <span class="date">Aout 2016 → 1 Mois</span>
+                                Agent de guichet bancaire à la Caisse d'Épargne
+                            </h4>
+                            <ul>
+                                <li>
+                                    Réalisation des opération courantes en agence bancaire
+                                </li>
+                                <li>
+                                    Accueil et service au client (Téléphone et face à face)
+                                </li>
+                                <li>
+                                    Gestion du courrier de l'agence
+                                </li>
+                                <li>
+                                    Suivi de la caisse physique
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid containerlevel1">
+                <div class="rubrique">
+                    <div class="row vertical-align">
+                        <img src="images/degree.png" id="degreeicon" class="img-center" alt="icon">
+                    </div>
+                    <div class="row">
+                        <h2 id="formation">FORMATION :</h2>
+                    </div>
+                    <div class="row vertical-align">
+                        <div class="col-xs-12 col-sm-3">
+                            <img src="images/exia.png" class="img-responsive img-center auto-resize" alt="icon">
+                        </div>
+                        <div class="col-xs-12 col-sm-9">
+                            <h4 class="text22">
+                                <span class="date">2015-2020</span>
+                                Etudes Supérieures
+                            </h4>
+                            <p class="text18">
+                                Deuxième Année de Cycle Préparatoire, CESI.EXIA, Campus d'Arras
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row vertical-align">
+                        <div class="col-xs-12 col-sm-3">
+                            <img src="images/eceb.png" class="img-responsive img-center auto-resize" alt="icon">
+                        </div>
+                        <div class="col-xs-12 col-sm-9">
+                            <h4 class="text22">
+                                <span class="date">2012-2015</span>
+                                Cycle Lycée - Filière Scientifique
+                            </h4>
+                            <p class="text18">
+                                St Dominique, Béthune<BR>
+                                Baccalauréat Scientifique, Mention Très Bien
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid containerlevel1">
+                <div class="rubrique">
+                    <div class="row vertical-align">
+                        <img src="images/certif.png" class="img-center" alt="icon">
+                    </div>
+                    <div class="row">
+                        <h2 id="certifications">Autres Diplômes et Certifications :</h2>
+                    </div>
+                    <div class="row vertical-align">
+                        <div class="col-xs-12 col-sm-3">
+                            <img src="images/first.jpg" class="img-responsive img-center auto-resize logocertif" alt="icon">
+                        </div>
+                        <div class="col-xs-12 col-sm-9">
+                            <h4 class="text22">
+                                <span class="date">2015</span>
+                                First Certificate in English (FCE)
+                            </h4>
+                            <p class="text18">
+                                Niveau d’Anglais certifié B2 par l’Université de Cambridge
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row vertical-align">
+                        <div class="col-xs-12 col-sm-3">
+                            <img src="images/bia.png" class="img-responsive img-center auto-resize logocertif" alt="icon">
+                        </div>
+                        <div class="col-xs-12 col-sm-9">
+                            <h4 class="text22">
+                                <span class="date">2012</span>
+                                Brevet d’initiation à l’aéronautique (BIA)
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid containerlevel1">
+                <div class="rubrique">
+                    <div class="row vertical-align">
+                        <img src="images/project.png" class="img-center" alt="icon">
+                    </div>
+                    <div class="row">
+                        <h2 id="projets">Principaux Projets Réalisés :</h2>
+                    </div>
+                    <div class="row vertical-align panel-body">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <a href="images/reseau.png" data-lightbox="reseau1" data-title="Topologie Finale du réseau implémenté.">
+                                    <img src="images/reseau.png" class="img-responsive img-center auto-resize" alt="icon">
+                                </a>
+                                <div class="caption">
+                                    <h3>Déploiement fictif d'un réseau d'entreprise</h3>
+                                    <p>
+                                        Projet visant à concevoir et implémenter un réseau d'entreprise redondant et sécurisé pour l'ensemble des utilisateurs sur le logiciel "CISCO PACKET TRACER".<BR><BR>
+                                        Celui-ci permet de simuler et configurer les principaux éléments d'un système d'information (Switchs, Routeurs, Pare-Feux et divers serveurs).
+                                    </p>
+                                    <p>
+                                        <a href="images/reseau.png" data-lightbox="reseau" data-title="Topologie Finale du réseau implémenté.">
+                                            <button class="btn btn-block">Agrandir l'image / Voir Plus...</button>
+                                        </a>
+                                        <a href="images/acl.png" data-lightbox="reseau" data-title="Politiques de Sécurité"></a>
+                                        <a href="images/redondance.png" data-lightbox="reseau" data-title="Redondance du Réseau"></a>
+                                        <a href="images/wifi.png" data-lightbox="reseau" data-title="Extrait de la Topologie Wifi"></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <a href="images/systeme.png" data-lightbox="systeme1" data-title="Environnement de travail et technologies utilisées">
+                                    <img src="images/systeme.png" class="img-responsive img-center auto-resize" alt="icon">
+                                </a>
+                                <div class="caption">
+                                    <h3>Administration d'un système d'information </h3>
+                                    <p>
+                                        Projet visant à automatiser des actions effectuées jusqu'ici manuellement par un administrateur système d'une entreprise fictive.<BR><BR>
+                                        Nous avons donc été ammenés à configurer différents serveurs (DNS, DHCP, HTTP, FTP) et à écrire une série de scripts en Bash et PowerShell.
+                                    </p>
+                                    <p>
+                                        <a href="images/systeme.png" data-lightbox="systeme" data-title="Environnement de travail et technologies utilisées">
+                                            <button class="btn btn-block">Agrandir l'image / Voir Plus...</button>
+                                        </a>
+                                        <a href="images/workflowserveurs.png" data-lightbox="systeme" data-title="Workflow du système d'information implémenté"></a>
+                                        <a href="images/toposerveurs.png" data-lightbox="systeme" data-title="Topologie semi logique/physique de notre système d'information"></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <a href="images/lorann.png" data-lightbox="java1" data-title="Capture d'un niveau du jeu">
+                                    <img src="images/lorann.png" class="img-responsive img-center auto-resize" alt="icon">
+                                </a>
+                                <div class="caption">
+                                    <h3>Développement du jeu "Lorann" en JAVA</h3>
+                                    <p>
+                                        Projet de développement d'un jeu respectant l'architecture MVC (Modèle, Vue, Contrôleur).<BR><BR>
+                                        Implémentation de design patterns basiques et chargement du niveau à l'aide d'une base de données MySQL. Initiation au développement collaboratif (GitHub) et à la gestion des versions (Maven).
+                                    </p>
+                                    <p>
+                                        <a href="images/lorann.PNG" data-lightbox="java1" data-title="Capture d'un niveau du jeu">
+                                            <button class="btn btn-block">Agrandir l'image / Voir Plus...</button>
+                                        </a>
+                                        <a href="images/lorannuml.png" data-lightbox="java" data-title="Diagramme de package du jeu"></a>
+                                        <a href="images/lorannsequence.png" data-lightbox="java" data-title="Diagramme de séquence du déplacement du héro"></a>
+                                        <a href="images/lorannmodel.png" data-lightbox="java" data-title="Diagramme de classe du modème du jeu"></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <a href="images/redx.png" data-lightbox="redx1" data-title="Schéma explicatif des fonctionnalités du logiciel">
+                                    <img src="images/redx.png" class="img-responsive img-center auto-resize" alt="icon">
+                                </a>
+                                <div class="caption">
+                                    <h3>Développement d'une IHM en C#</h3>
+                                    <p>
+                                        Projet de développement d'une IHM permettant d'afficher de manière "responsive" du texte ou une image sur un dispositif holographique.<BR><BR>
+                                        Développement en parallèle d'un service Windows permettant de fermer le programme lorsque les performances de la machine sont critiques. Les performances de la machine étant stockées régulièrement dans une base de données sous SQL Server.
+                                    </p>
+                                    <p>
+                                        <a href="images/redx.png" data-lightbox="redx" data-title="Schéma explicatif des fonctionnalités du logiciel">
+                                            <button class="btn btn-block">Agrandir l'image / Voir Plus...</button>
+                                        </a>
+                                        <a href="images/redxworkflow.png" data-lightbox="redx" data-title="Workflow du fonctionnement interne du logiciel"></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <a href="images/bdd.png" data-lightbox="bdd1" data-title="Architecture de notre base de données">
+                                    <img src="images/bdd.png" class="img-responsive img-center auto-resize" alt="icon">
+                                </a>
+                                <div class="caption">
+                                    <h3>Conception, Implémentation et Exploitation d'une base de données</h3>
+                                    <p>
+                                        Projet visant à exploiter des données collectées sur l'ensemble des actions des joueurs d'une équipe de football sur plusieurs matchs.<BR><BR>
+                                        La phase de conception a été réalisée à l'aide de la méthode Merise pour ensuite pouvoir construire notre base et exploiter les données grâce à des requêtes et procédures stockées.
+                                    </p>
+                                    <p>
+                                        <a href="images/bdd.png" data-lightbox="bdd" data-title="Architecture de notre base de données">
+                                            <button class="btn btn-block">Agrandir l'image / Voir Plus...</button>
+                                        </a>
+                                        <a href="images/bddmcd.png" data-lightbox="bdd" data-title="Modèle conceptuel des données (MCD)"></a>
+                                        <a href="images/bddmld.png" data-lightbox="bdd" data-title="Modèle logique des données (MLD)"></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <a href="images/robotique.png" data-lightbox="robot1" data-title="Fiche technique de notre robot">
+                                    <img src="images/robotique.png" class="img-responsive img-center auto-resize" alt="icon">
+                                </a>
+                                <div class="caption">
+                                    <h3>Conception d'un véhicule autoguidé en Lego</h3>
+                                    <p>
+                                        Projet divisé et réparti sur plusieurs mois. Il visait à concevoir de A à Z un robot pouvant se déplacer de manière autonome à l'aide de 3 algorithmes pour remporter 3 épreuves différentes.<BR><BR>
+                                        L'objectif de ce projet était d'acquérir des connaissances en cinétique, cinématique, électronique, énergétique, algorithmique ansi qu'en langage C utilisé avec le contrôleur Arduino.
+                                    </p>
+                                    <p>
+                                        <a href="images/robotique.PNG" data-lightbox="robot" data-title="Fiche technique de notre robot">
+                                            <button class="btn btn-block">Agrandir l'image / Voir Plus...</button>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid containerlevel1">
+                <div class="rubrique">
+                    <div class="row vertical-align">
+                        <img src="images/hobbies.png" class="img-center" alt="icon">
+                    </div>
+                    <div class="row">
+                        <h2 id="loisirs">Loisirs :</h2>
+                    </div>
+                    <div class="row vertical-align panel-body">
+                        <div class="col-xs-12 col-sm-3">
+                            <img src="images/saxophone.png" class="img-responsive img-center auto-resize logocertif" alt="icon">
+                        </div>
+                        <div class="col-xs-12 col-sm-9">
+                            <h4 class="text22">
+                                Saxophone
+                            </h4>
+                            <p class="text18">
+                                Je joue du saxophone depuis maintenant plus d'une dizaine d'année. J'ai eu l'occasion de jouer en groupe très souvent (Orchestre, Harmonie, autre...) et donc participer à de multiples manifestations.
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-3">
+                            <img src="images/climbing.png" class="img-responsive img-center auto-resize logocertif" alt="icon">
+                        </div>
+                        <div class="col-xs-12 col-sm-9">
+                            <h4 class="text22">
+                                Sports de Montagne
+                            </h4>
+                            <p class="text18">
+                                J'ai la chance d'avoir, dès mon plus jeune âge, découvert la montagne et ses activités. Si bien qu'aujourd'hui, celle-ci représente une passion pour moi.<BR>
+                                J'ai déjà eu l'occasion d'organiser avec des amis des randonnées itinérantes de plusieurs jours afin de découvrir d'autres paysages et lieux reculés.
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-3">
+                            <img src="images/game.png" class="img-responsive img-center auto-resize logocertif" alt="icon">
+                        </div>
+                        <div class="col-xs-12 col-sm-9">
+                            <h4 class="text22">
+                                Jeux-Vidéos
+                            </h4>
+                            <p class="text18">
+                                Vous vous en serez douté, il est difficile de ne pas aimer les jeux-vidéos lorsque l'on aime l'informatique.<BR>
+                                J'aime jouer à toutes sortes de jeu dès lors que je suis avec d'autres amis. C'est le fait de jouer à plusieurs qui me motive principalement.
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-3">
+                            <img src="images/book.png" class="img-responsive img-center auto-resize logocertif" alt="icon">
+                        </div>
+                        <div class="col-xs-12 col-sm-9">
+                            <h4 class="text22">
+                                Lecture
+                            </h4>
+                            <p class="text18">
+                                Bien que délaissée ces derniers temps, j'ai un grand intérêt pour la lecture. Il suffit qu'un livre ou une série de livres me plaise, et me voilà reparti pour des soirées entières de lecture.
+                                J'aime lire énormément de genres différents, notamment les romans policiers de Franck Thilliez, l'héroïque-fantaisie ou encore la science-fiction.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer>
+            <p>
+
+            </p>
+        </footer>
+
+            <script src="node_modules/jquery/dist/jquery.min.js"></script>
+            <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+            <script src="scripts.js"></script>
+            <script src="node_modules/lightbox2/dist/js/lightbox.min.js"></script>
+            <script>$("[data-toggle=popover]").popover();</script>
+</body>
+</html>

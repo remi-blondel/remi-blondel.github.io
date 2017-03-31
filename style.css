@@ -1,0 +1,229 @@
+.navbar-fixed-top
+{
+    padding: 1%;
+    margin-bottom: auto;
+    text-decoration-color: white;
+    font-weight: bold;
+    float: none;
+}
+body
+{
+    padding-top: 50px;
+    font-family: "Trebuchet MS";
+    background-color: whitesmoke;
+}
+.topannels
+{
+    text-align: center;
+    background-size: cover;
+}
+.topannel1
+{
+    background-image: url("images/initialbackground.jpg");
+    padding-bottom: 180px;
+}
+.topannel2
+{
+    background-color: #5bc0de;
+    padding-top: 20px;
+}
+
+.contactpannel ul
+{
+    font-weight: bold;
+    background-color: #2aabd2;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+}
+
+#name
+{
+    margin-top: 10px;
+    padding-top: 2%;
+    color: white;
+    font-weight: bold;
+}
+
+#identite
+{
+    position: absolute;
+    margin-top: -180px;
+    left: 50%; /*half the container width*/
+    margin-left: -125px; /*half the width of the image*/
+}
+
+.topannels h2
+{
+    color: white;
+    font-weight: bold;
+    margin-top: 50px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 2%;
+}
+.topannels p
+{
+    margin-bottom: -1%;
+    color: white;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+header
+{
+    text-align: center;
+    font-weight: bold;
+}
+.containerlevel1
+{
+    background-color: white;
+    padding: 2%;
+    margin: 3%;
+    box-shadow: 0.2em 0.2em #CCC
+}
+#global
+{
+    display: flex;
+    margin: auto;
+}
+
+.rubrique h2
+{
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.media-heading
+{
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.padding3
+{
+    padding: 3%;
+}
+
+.l3content
+{
+    padding-left: 3%;
+    padding-top: 3%;
+    color: black;
+}
+
+.panel-title
+{
+    padding-bottom: 15px;
+    text-align: center;
+}
+.rubrique h4
+{
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.italique
+{
+    font-style: italic;
+}
+
+.date
+{
+    float: right;
+    font-weight: bold;
+}
+.language
+{
+    font-weight: bold;
+}
+.img-responsive
+{
+    height: 5em;
+}
+
+.img-center
+{
+    display: block;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+.textcontent
+{
+    font-weight: bold;
+}
+.panel-body
+{
+    text-align: justify;
+}
+#formation, #experience, #competences, #certifications, #projets, #loisirs
+{
+    text-align: center;
+    font-weight: bolder;
+    font-family: Stencil ;
+}
+.content
+{
+    margin-top: 22px;
+}
+.text18
+{
+    font-size: 18px;
+}
+.text22
+{
+    font-size: 22px;
+}
+.auto-resize
+{
+    margin: auto;
+    height: auto;
+}
+/*Code permettant de créer
+des colonnes de même hauteur
+.equal
+{
+    display: flex;
+    display: -webkit-flex;
+}*/
+.vertical-align
+{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logocertif
+{
+    padding: 20px;
+}
+
+#lightBoxBg
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.5;
+    display: none;
+    background-color: #000000;
+    height: 100%;
+    width: 100%;
+}
+
+.lightBox
+{
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    display: none;
+}
