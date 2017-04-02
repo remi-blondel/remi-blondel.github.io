@@ -124,7 +124,13 @@ header
 {
     padding-bottom: 15px;
     text-align: center;
+    color: white;
 }
+.panel-heading
+{
+    background-color: #2e6da4;
+}
+
 .rubrique h4
 {
     font-weight: bold;
@@ -225,5 +231,14 @@ des colonnes de même hauteur
     position: absolute;
     top: 25%;
     left: 40%;
+    display: none;
+}
+
+.FRcontent
+{
+    display: block;
+}
+.ENcontent
+{
     display: none;
 }

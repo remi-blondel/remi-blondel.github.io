@@ -69,22 +69,32 @@ function changeVision()
     }
 }
 
-function startLightBox(id)
+function changeLanguage()
 {
-    console.log(id);
-    //$(id).css('display', 'block');
-    $(id).css('display', 'block');
-    var lbBg = document.getElementById("lightBoxBg");
-    //var lb = document.getElementById("lightBox");
-    lbBg.style.display = "block";
-    //lb.style.display = "block";
+    var flag = document.getElementById("btnlanguage").value;
+    if(flag == "FR")
+    {
+        setEnglish();
+    }
+    else
+    {
+        setFrench();
+    }
 }
 
-function dismiss(id)
+function setEnglish()
 {
-    var lbBg = document.getElementById("lightBoxBg");
-    $(id).css('display', 'none');
-    //var lb = document.getElementById("lightBox");
-    lbBg.style.display = "none";
-    //lb.style.display = " none";
+    $(".FRcontent").hide();
+    $(".ENcontent").show();
+
+    document.getElementById("btnlanguage").value = "EN";
+    document.getElementById("btnlanguage").innerText = "FR";
+}
+function setFrench()
+{
+    $(".ENcontent").hide();
+    $(".FRcontent").show();
+
+    document.getElementById("btnlanguage").value = "FR";
+    document.getElementById("btnlanguage").innerText = "EN";
 }

@@ -24,17 +24,32 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Acceuil</a></li>
-                        <li><a href="#competences">Compétences</a></li>
-                        <li><a href="#experience">Expérience</a></li>
-                        <li><a href="#formation">Formation</a></li>
-                        <li><a href="#certifications">Certifications</a></li>
-                        <li><a href="#projets">Projets</a></li>
-                        <li><a href="#loisirs">Loisirs</a></li>
+                        <li class="active"><a href="#">
+                            <span class="FRcontent">Acceuil</span><span class="ENcontent">Home</span></a>
+                        </li>
+                        <li><a href="#competences">
+                            <span class="FRcontent">Compétences</span><span class="ENcontent">Skills</span></a>
+                        </li>
+                        <li><a href="#experience">
+                            <span class="FRcontent">Expérience</span><span class="ENcontent">Experience</span></a>
+                        </li>
+                        <li><a href="#formation">
+                            <span class="FRcontent">Formation</span><span class="ENcontent">Education</span></a>
+                        </li>
+                        <li><a href="#certifications">
+                            <span class="FRcontent ENcontent">Certifications</span></a>
+                        </li>
+                        <li><a href="#projets">
+                            <span class="FRcontent">Projets</span><span class="ENcontent">Projects</span></a>
+                        </li>
+                        <li><a href="#loisirs">
+                            <span class="FRcontent">Loisirs</span><span class="ENcontent">Hobbies</span></a>
+                        </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li>
                             <button id="btnVision" type="button" value="Jour" class="btn btn-default navbar-btn" onclick="changeVision()"><span id="visionMode">Nuit</span></button>
+                            <button id="btnlanguage" type="button" value="FR" class="btn btn-default navbar-btn" onclick="changeLanguage()"><span id="language">EN</span></button>
                         </li>
                     </ul>
                 </div>
@@ -49,13 +64,16 @@
         <img src="images/pp2.png" id = "identite" class="img-center" alt="Photo de Rémi Blondel">
         <div class="topannel2">
             <h2>
-                Étudiant en École d'Ingénieur spécialisée en Informatique (CESI.EXIA)
+                <span class="FRcontent">Étudiant en École d'Ingénieur spécialisée en Informatique (CESI.EXIA)</span>
+                <span class="ENcontent">Student in an IT Engineering School (CESI.EXIA)</span>
             </h2>
             <p>
-                Issu d'un baccalauréat scientifique, j'étudie maintenant en deuxième année à l'école d'ingénieur CESI Exia, spécialisée dès la première année dans les technologies de l'information.
+                <span class="FRcontent">Issu d'un baccalauréat scientifique, j'étudie maintenant en deuxième année à l'école d'ingénieur CESI Exia, spécialisée dès la première année dans les technologies de l'information.</span>
+                <span class="ENcontent">After my High School degree (scientific field), I decided to study at CESI.Exia Engineering school, whitch offers a 5 years university course in IT domain.</span>
             </p>
             <p>
-                Je suis constamment ouvert à de nouvelles opportunités de stages en priorité dans le domaine des systèmes et réseaux. Cependant je reste attentif à toute autre proposition pertinente au regard de mes compétences.
+                <span class="FRcontent">Je suis constamment ouvert à de nouvelles opportunités de stages en priorité dans le domaine des systèmes et réseaux. Cependant je reste attentif à toute autre proposition pertinente au regard de mes compétences.</span>
+                <span class="ENcontent">I am endlessly loking for new profesional experiences to enrich my career path. Feel free to get in touch with me !</span>
             </p>
         </div>
         <div class="contactpannel">
@@ -81,49 +99,65 @@
                         <img src="images/skill.png" class="img-center media-object" alt="icon">
                     </div>
                     <h2 id="competences">
-                        COMPETENCES :
+                        <span class="FRcontent">COMPETENCES :</span>
+                        <span class="ENcontent">SKILLS :</span>
                     </h2>
                     <div class="row padding3 vertical-align">
                         <div class="col-xs-12 col-sm-2">
-                            <h3 class="media-heading">Réseau</h3><img class="media-object img-center centreVerticalement" src="images/networking.png" alt="icon">
+                            <h3 class="media-heading">
+                                <span class="FRcontent">Réseau</span>
+                                <span class="ENcontent">Network</span>
+                            </h3><img class="media-object img-center centreVerticalement" src="images/networking.png" alt="icon">
                         </div>
                         <div class="col-xs-12 col-sm-10">
                             <div class="panel-group l3content" id="accordion" role="tablist" aria-multiselectable="true">
                                 <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="heading1">
-                                            <a role="button" data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                                                <h4 class="panel-title">Fondamentaux du TCP/IP</h4>
-                                            </a>
-                                    </div>
+                                    <a role="button" data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                        <div class="panel-heading" role="tab" id="heading1">
+                                            <h4 class="panel-title">
+                                                <span class="FRcontent">Fondamentaux du TCP/IP</span>
+                                                <span class="ENcontent">TCP/IP basics</span>
+                                            </h4>
+                                        </div>
+                                    </a>
                                     <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
                                         <div class="panel-body">
-                                            Je suis familier avec la suite des principaux protocoles utilisant le TCP/IP. Les modèles en couches (OSI et TCP/IP) sont des notions que je maitrise parfaitement.
+                                            <span class="FRcontent">Je suis familier avec la suite des principaux protocoles utilisant le TCP/IP. Les modèles en couches (OSI et TCP/IP) sont des notions que je maitrise parfaitement.</span>
+                                            <span class="ENcontent">I am familiar with the main protocols using TCP/IP. Thanks to my courses and the CISCO netacad platrofm, I also know a lot of this about the layered models (OSI et TCP/IP).</span>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="heading2">
-                                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                                <h4 class="panel-title">Switching / Routing / Sécurité</h4>
-                                            </a>
-                                    </div>
+                                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        <div class="panel-heading" role="tab" id="heading2">
+                                            <h4 class="panel-title">
+                                                <span class="FRcontent">Commutation / Routage / Sécurité</span>
+                                                <span class="ENcontent">Switching / Routing / Sécurity</span>
+                                            </h4>
+                                        </div>
+                                    </a>
                                     <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
                                         <div class="panel-body">
-                                            Grâce aux projets de conception de réseaux proposés au sein de mon école et aux cours préparant au passage de la certification CISCO CCNA je suis familier avec l’environnement CISCO. Je maitrise une grande partie des fontionnalités des switchs et routeurs (VLANS, Trunking, HSRP, Etherchannel, Spanning-Tree, Routage Statique/Dynamique/Inter-VLANs etc...). Je possède également les connaissances nécessaires pour implémenter une certaine sécurité au sein d'un réseau (ACL Standard/Étendues, NAT/PAT, Port-Security, SSH...).
+                                            <span class="FRcontent">Grâce aux projets de conception de réseaux proposés au sein de mon école et aux cours préparant au passage de la certification CISCO CCNA je suis familier avec l’environnement CISCO. Je maitrise une grande partie des fontionnalités des switchs et routeurs (VLANS, Trunking, HSRP, Etherchannel, Spanning-Tree, Routage Statique/Dynamique/Inter-VLANs etc...). Je possède également les connaissances nécessaires pour implémenter une certaine sécurité au sein d'un réseau (ACL Standard/Étendues, NAT/PAT, Port-Security, SSH...).</span>
+                                            <span class="ENcontent">Thanks to the network design projects made within my education and also the CISCO netacad courses preparing to the CCNA, I am familiar with the CISCO environement. I understand and I know how to configure switches and routers within a network (VLANS, Trunking, HSRP, Etherchannel, Spanning-Tree, Routing : Static/Dynamic/Inter-VLANs etc...). I also know how to implement the some security protocols (ACL Standard/Extended, NAT/PAT, Port-Security, SSH...).</span>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="heading3">
-                                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                                <h4 class="panel-title">Divers</h4>
-                                            </a>
-                                    </div>
+                                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                        <div class="panel-heading" role="tab" id="heading3">
+                                            <h4 class="panel-title">
+                                                <span class="FRcontent">Divers</span>
+                                                <span class="ENcontent">Other</span>
+                                            </h4>
+                                        </div>
+                                    </a>
                                     <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
                                         <div class="panel-body">
-                                            Je suis capable de concevoir une architecture réseau parfaitement redondante tout en prenant en compte les besoins émis par l'entreprise et en sélectionnant le matériel adéquat. Je possède également les bases de la technologie WLAN (normes, protocoles et méthodes d'authentification).
+                                            <span class="FRcontent">Je suis capable de concevoir une architecture réseau parfaitement redondante tout en prenant en compte les besoins émis par l'entreprise et en sélectionnant le matériel adéquat. Je possède également les bases de la technologie WLAN (normes, protocoles et méthodes d'authentification).</span>
+                                            <span class="ENcontent">I am able to design and implement a perfectly redundant network architecture while taking in account the company needs and selecting the correct equipment. I also have basics in WLAN technologies (norms, protocols et authentication methods).</span>
                                         </div>
                                     </div>
                                 </div>
@@ -132,7 +166,10 @@
                     </div>
                     <div class="row padding3 vertical-align">
                         <div class="col-sm-2">
-                            <h3 class="media-heading">Langages</h3><img class="media-object img-center" src="images/laptop.png" alt="icon">
+                            <h3 class="media-heading">
+                                <span class="FRcontent">Langages de Programmation</span>
+                                <span class="ENcontent">Programming languages</span>
+                            </h3><img class="media-object img-center" src="images/laptop.png" alt="icon">
                         </div>
                         <div class="col-sm-10">
                             <div class="media-body l3content">
@@ -210,12 +247,16 @@
                     </div>
                     <div class="row padding3">
                         <div class="col-sm-2">
-                            <h3 class="media-heading">Bases de Données</h3><img class="media-object img-center" src="images/database.png" alt="icon">
+                            <h3 class="media-heading">
+                                <span class="FRcontent">Bases de Données</span>
+                                <span class="ENcontent">Databases</span>
+                            </h3><img class="media-object img-center" src="images/database.png" alt="icon">
                         </div>
                         <div class="col-sm-10">
                             <div class="media-body textcontent l3content">
                                 <div class="well well-sm">
-                                    Systèmes de Gestion de Bases de données déjà utilisés :
+                                    <span class="FRcontent">Systèmes de Gestion de Bases de données déjà utilisés :</span>
+                                    <span class="ENcontent">Database management systems already used :</span>
                                     <div class="container-fluid">
                                         <div class="row">
                                             <div class="col-sm-4">
@@ -230,18 +271,25 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="well well-sm">Connaissances de base en conception de bases de données : Méthode Merise</div>
+                                <div class="well well-sm">
+                                    <span class="FRcontent">Connaissances de base en conception de bases de données : Méthode Merise</span>
+                                    <span class="ENcontent">Knowledge in database design : Merise Methodology (Mostly used in France)</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="row padding3">
                         <div class="col-sm-2">
-                            <h3 class="media-heading">Systèmes</h3><img class="media-object img-center" src="images/server.png" alt="icon">
+                            <h3 class="media-heading">
+                                <span class="FRcontent">Systèmes</span>
+                                <span class="ENcontent">Systems</span>
+                            </h3><img class="media-object img-center" src="images/server.png" alt="icon">
                         </div>
                         <div class="col-sm-10">
                             <div class="media-body textcontent l3content">
                                 <div class="well well-sm">
-                                    Systèmes étudiés :
+                                    <span class="FRcontent">Systèmes étudiés :</span>
+                                    <span class="ENcontent">Systems studied :</span>
                                     <div class="container-fluid">
                                         <div class="row">
                                             <div class="col-sm-6">
@@ -253,7 +301,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="well well-sm">Configuration basique de serveurs (WEB, DNS, DHCP, FTP)</div>
+                                <div class="well well-sm">
+                                    <span class="FRcontent">Configuration basique de serveurs (WEB, DNS, DHCP, FTP)</span>
+                                    <span class="ENcontent">Basic configuration of the following servers : WEB, DNS, DHCP, FTP</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -267,7 +318,7 @@
                     </div>
                     <div class="row">
                         <h2 id="experience">
-                            EXPERIENCE :
+                            <span class="FRcontent ENcontent">EXPERIENCE :</span>
                         </h2>
                     </div>
                     <div class="row vertical-align">
@@ -276,32 +327,45 @@
                         </div>
                         <div class="col-sm-12 col-md-9">
                             <h4>
-                                <span class="date">Septembre 2016 → 2 Mois</span>
-                                Stage Crédit et Recouvrement, Merck<BR>Amsterdam, Pays-Bas
+                                <span class="date">
+                                    <span class="FRcontent">Septembre 2016 → 2 Mois</span>
+                                    <span class="ENcontent">September 2016 → 2 Months</span>
+                                </span>
+                                <span class="FRcontent">Stage d'immersion linguistique, Merck<BR>Amsterdam, Pays-Bas</span>
+                                <span class="ENcontent">Language immersion internship, Merck<BR>Amsterdam, Pays-Bas</span>
                             </h4>
                             <ul>
                                 <li>
-                                    Analyse du compte client pour comprendre/corriger les erreurs gênant le paiement
+                                    <span class="FRcontent">Analyse du compte client pour comprendre/corriger les erreurs gênant le paiement</span>
+                                    <span class="ENcontent">Understanding and correction of problems avoiding the client's payment</span>
                                 </li>
                                 <li>
-                                    Prospection des détails de paiement auprès du client pour le lettrage des factures
+                                    <span class="FRcontent">Prospection des détails de paiement auprès du client pour le lettrage des factures</span>
+                                    <span class="ENcontent">Payment details demands to the clients to close the invoices</span>
                                 </li>
                                 <li>
-                                    Ciblage et approche des clients (e-mail/téléphone) pour procéder au recouvrement
+                                    <span class="FRcontent">Ciblage et approche des clients (e-mail/téléphone) pour procéder au recouvrement</span>
+                                    <span class="ENcontent">Clients targeting and approach (e-mail/phone) to collect the outstanding invoices amount</span>
                                 </li>
                                 <li>
-                                    Réponse aux demandes et interrogations diverses des clients
+                                    <span class="FRcontent">Réponse aux demandes et interrogations diverses des clients</span>
+                                    <span class="ENcontent">Basic customer service related to accounting</span>
                                 </li>
                             </ul>
                             <h5>
-                                <span class="italique">Détails Supplémentaires:</span>
+                                <span class="italique">
+                                    <span class="FRcontent">Détails Supplémentaires :</span>
+                                    <span class="ENcontent">More details :</span>
+                                </span>
                             </h5>
                             <ul>
                                 <li>
-                                    Collaborateurs et clientelle Anglophone
+                                    <span class="FRcontent">Collaborateurs et clientelle Anglophone</span>
+                                    <span class="ENcontent">English speaking working environment</span>
                                 </li>
                                 <li>
-                                    Environnement de travail: ERP sous ORACLE, suite Office, CRM (salesforce.com)
+                                    <span class="FRcontent">Environnement de travail : ERP sous ORACLE, suite Office, CRM (salesforce.com)</span>
+                                    <span class="ENcontent">Softwares used : ERP (ORACLE), Office Suite, CRM (salesforce.com)</span>
                                 </li>
                             </ul>
                         </div>
@@ -313,21 +377,29 @@
                         </div>
                         <div class="col-sm-12 col-md-9">
                             <h4>
-                                <span class="date">Aout 2016 → 1 Mois</span>
-                                Agent de guichet bancaire à la Caisse d'Épargne
+                                <span class="date">
+                                    <span class="FRcontent">Aout 2016 → 1 Mois</span>
+                                    <span class="ENcontent">August 2016 → 1 Month</span>
+                                </span>
+                                <span class="FRcontent">Agent de guichet bancaire à la Caisse d'Épargne</span>
+                                <span class="ENcontent">Summer Job - Bank agent in a franch bank</span>
                             </h4>
                             <ul>
                                 <li>
-                                    Réalisation des opération courantes en agence bancaire
+                                    <span class="FRcontent">Réalisation des opération courantes en agence bancaire</span>
+                                    <span class="ENcontent">Menial tasks in a bank agency</span>
                                 </li>
                                 <li>
-                                    Accueil et service au client (Téléphone et face à face)
+                                    <span class="FRcontent">Accueil et service au client (Téléphone et face à face)</span>
+                                    <span class="ENcontent">Customer service at the front desk and on the phone</span>
                                 </li>
                                 <li>
-                                    Gestion du courrier de l'agence
+                                    <span class="FRcontent">Gestion du courrier de l'agence</span>
+                                    <span class="ENcontent">Agency's mails management</span>
                                 </li>
                                 <li>
-                                    Suivi de la caisse physique
+                                    <span class="FRcontent">Suivi de la caisse physique</span>
+                                    <span class="ENcontent">Physical money monitoring</span>
                                 </li>
                             </ul>
                         </div>
@@ -341,7 +413,10 @@
                         <img src="images/degree.png" id="degreeicon" class="img-center" alt="icon">
                     </div>
                     <div class="row">
-                        <h2 id="formation">FORMATION :</h2>
+                        <h2 id="formation">
+                            <span class="FRcontent">FORMATION :</span>
+                            <span class="ENcontent">Education :</span>
+                        </h2>
                     </div>
                     <div class="row vertical-align">
                         <div class="col-xs-12 col-sm-3">
@@ -350,10 +425,12 @@
                         <div class="col-xs-12 col-sm-9">
                             <h4 class="text22">
                                 <span class="date">2015-2020</span>
-                                Etudes Supérieures
+                                <span class="FRcontent">Etudes Supérieures</span>
+                                <span class="ENcontent">Higher Education</span>
                             </h4>
                             <p class="text18">
-                                Deuxième Année de Cycle Préparatoire, CESI.EXIA, Campus d'Arras
+                                <span class="FRcontent">Deuxième Année de Cycle Préparatoire, CESI.EXIA, Campus d'Arras</span>
+                                <span class="ENcontent">Second-year (Preparatory Cycle), CESI.EXIA, Arras' Campus</span>
                             </p>
                         </div>
                     </div>
@@ -364,11 +441,13 @@
                         <div class="col-xs-12 col-sm-9">
                             <h4 class="text22">
                                 <span class="date">2012-2015</span>
-                                Cycle Lycée - Filière Scientifique
+                                <span class="FRcontent">Cycle Lycée - Filière Scientifique</span>
+                                <span class="ENcontent">High School - Science Field</span>
                             </h4>
                             <p class="text18">
                                 St Dominique, Béthune<BR>
-                                Baccalauréat Scientifique, Mention Très Bien
+                                <span class="FRcontent">Baccalauréat Scientifique, Mention Très Bien</span>
+                                <span class="ENcontent">High School degree in science, with distinction</span>
                             </p>
                         </div>
                     </div>
@@ -381,7 +460,10 @@
                         <img src="images/certif.png" class="img-center" alt="icon">
                     </div>
                     <div class="row">
-                        <h2 id="certifications">Autres Diplômes et Certifications :</h2>
+                        <h2 id="certifications">
+                            <span class="FRcontent">Autres Diplômes et Certifications :</span>
+                            <span class="ENcontent">Other Degrees and Certifications :</span>
+                        </h2>
                     </div>
                     <div class="row vertical-align">
                         <div class="col-xs-12 col-sm-3">
@@ -393,7 +475,8 @@
                                 First Certificate in English (FCE)
                             </h4>
                             <p class="text18">
-                                Niveau d’Anglais certifié B2 par l’Université de Cambridge
+                                <span class="FRcontent">Niveau d’Anglais certifié B2 par l’Université de Cambridge</span>
+                                <span class="ENcontent">English level certified B2 by Cambridge University</span>
                             </p>
                         </div>
                     </div>
@@ -404,7 +487,8 @@
                         <div class="col-xs-12 col-sm-9">
                             <h4 class="text22">
                                 <span class="date">2012</span>
-                                Brevet d’initiation à l’aéronautique (BIA)
+                                <span class="FRcontent">Brevet d’initiation à l’aéronautique (BIA)</span>
+                                <span class="ENcontent">Aeronautical initiation certificate (BIA)</span>
                             </h4>
                         </div>
                     </div>
@@ -417,7 +501,10 @@
                         <img src="images/project.png" class="img-center" alt="icon">
                     </div>
                     <div class="row">
-                        <h2 id="projets">Principaux Projets Réalisés :</h2>
+                        <h2 id="projets">
+                            <span class="FRcontent">Principaux Projets Réalisés :</span>
+                            <span class="ENcontent">Main projects :</span>
+                        </h2>
                     </div>
                     <div class="row vertical-align panel-body">
                         <div class="col-sm-6 col-md-4">
@@ -426,14 +513,22 @@
                                     <img src="images/reseau.png" class="img-responsive img-center auto-resize" alt="icon">
                                 </a>
                                 <div class="caption">
-                                    <h3>Déploiement fictif d'un réseau d'entreprise</h3>
+                                    <h3>
+                                        <span class="FRcontent">Déploiement fictif d'un réseau d'entreprise</span>
+                                        <span class="ENcontent">Fictional deployment of a company network</span>
+                                    </h3>
                                     <p>
-                                        Projet visant à concevoir et implémenter un réseau d'entreprise redondant et sécurisé pour l'ensemble des utilisateurs sur le logiciel "CISCO PACKET TRACER".<BR><BR>
-                                        Celui-ci permet de simuler et configurer les principaux éléments d'un système d'information (Switchs, Routeurs, Pare-Feux et divers serveurs).
+                                        <span class="FRcontent">Projet visant à concevoir et implémenter un réseau d'entreprise redondant et sécurisé pour l'ensemble des utilisateurs sur le logiciel "CISCO PACKET TRACER".<BR><BR>
+                                        Celui-ci permet de simuler et configurer les principaux éléments d'un système d'information (Switchs, Routeurs, Pare-Feux et divers serveurs).</span>
+                                        <span class="ENcontent">Project with the aim of designing and implement a redundant and secured company network providing internet and other services for the employees. Software used : CISCO Packet Tracer.<BR><BR>
+                                        This software allows to emulate and configure the main devices of an information system (Switches, Routers, Firewalls et some servers).</span>
                                     </p>
                                     <p>
                                         <a href="images/reseau.png" data-lightbox="reseau" data-title="Topologie Finale du réseau implémenté.">
-                                            <button class="btn btn-block">Agrandir l'image / Voir Plus...</button>
+                                            <button class="btn btn-block">
+                                                <span class="FRcontent">Agrandir l'image / Voir Plus...</span>
+                                                <span class="ENcontent">See more pictures...</span>
+                                            </button>
                                         </a>
                                         <a href="images/acl.png" data-lightbox="reseau" data-title="Politiques de Sécurité"></a>
                                         <a href="images/redondance.png" data-lightbox="reseau" data-title="Redondance du Réseau"></a>
@@ -448,14 +543,22 @@
                                     <img src="images/systeme.png" class="img-responsive img-center auto-resize" alt="icon">
                                 </a>
                                 <div class="caption">
-                                    <h3>Administration d'un système d'information </h3>
+                                    <h3>
+                                        <span class="FRcontent">Administration et automatisation d'un système d'information</span>
+                                        <span class="ENcontent">Information system administration and automation</span>
+                                    </h3>
                                     <p>
-                                        Projet visant à automatiser des actions effectuées jusqu'ici manuellement par un administrateur système d'une entreprise fictive.<BR><BR>
-                                        Nous avons donc été ammenés à configurer différents serveurs (DNS, DHCP, HTTP, FTP) et à écrire une série de scripts en Bash et PowerShell.
+                                        <span class="FRcontent">Projet visant à automatiser des actions effectuées jusqu'ici manuellement par un administrateur système d'une entreprise fictive.<BR><BR>
+                                        Nous avons donc été ammenés à configurer différents serveurs (DNS, DHCP, HTTP, FTP) et à écrire une série de scripts en Bash et PowerShell.</span>
+                                        <span class="ENcontent">Project with the aim of automate some actions usually done manually by the system administrator.<BR><BR>
+                                        We were led to configure different servers (DNS, DHCP, HTTP, FTP) and write some scripts in Bash and PowerShell.</span>
                                     </p>
                                     <p>
                                         <a href="images/systeme.png" data-lightbox="systeme" data-title="Environnement de travail et technologies utilisées">
-                                            <button class="btn btn-block">Agrandir l'image / Voir Plus...</button>
+                                            <button class="btn btn-block">
+                                                <span class="FRcontent">Agrandir l'image / Voir Plus...</span>
+                                                <span class="ENcontent">See more pictures...</span>
+                                            </button>
                                         </a>
                                         <a href="images/workflowserveurs.png" data-lightbox="systeme" data-title="Workflow du système d'information implémenté"></a>
                                         <a href="images/toposerveurs.png" data-lightbox="systeme" data-title="Topologie semi logique/physique de notre système d'information"></a>
@@ -469,14 +572,22 @@
                                     <img src="images/lorann.png" class="img-responsive img-center auto-resize" alt="icon">
                                 </a>
                                 <div class="caption">
-                                    <h3>Développement du jeu "Lorann" en JAVA</h3>
+                                    <h3>
+                                        <span class="FRcontent">Développement du jeu "Lorann" en JAVA</span>
+                                        <span class="ENcontent">Development of "Lorann" game in JAVA</span>
+                                    </h3>
                                     <p>
-                                        Projet de développement d'un jeu respectant l'architecture MVC (Modèle, Vue, Contrôleur).<BR><BR>
-                                        Implémentation de design patterns basiques et chargement du niveau à l'aide d'une base de données MySQL. Initiation au développement collaboratif (GitHub) et à la gestion des versions (Maven).
+                                        <span class="FRcontent">Projet de développement d'un jeu respectant l'architecture MVC (Modèle, Vue, Contrôleur).<BR><BR>
+                                        Implémentation de design patterns basiques et chargement du niveau à l'aide d'une base de données MySQL. Initiation au développement collaboratif (GitHub) et à la gestion des versions (Maven).</span>
+                                        <span class="ENcontent">Development of a game with the MVC architecture.<BR><BR>
+                                        Basic design patterns implementation and level loading with a MySQL database. Introduction to collaborative development with GitHb and to versioning with Maven.</span>
                                     </p>
                                     <p>
                                         <a href="images/lorann.png" data-lightbox="java1" data-title="Capture d'un niveau du jeu">
-                                            <button class="btn btn-block">Agrandir l'image / Voir Plus...</button>
+                                            <button class="btn btn-block">
+                                                <span class="FRcontent">Agrandir l'image / Voir Plus...</span>
+                                                <span class="ENcontent">See more pictures...</span>
+                                            </button>
                                         </a>
                                         <a href="images/lorannuml.png" data-lightbox="java" data-title="Diagramme de package du jeu"></a>
                                         <a href="images/lorannsequence.png" data-lightbox="java" data-title="Diagramme de séquence du déplacement du héro"></a>
@@ -491,14 +602,22 @@
                                     <img src="images/redx.png" class="img-responsive img-center auto-resize" alt="icon">
                                 </a>
                                 <div class="caption">
-                                    <h3>Développement d'une IHM en C#</h3>
+                                    <h3>
+                                        <span class="FRcontent">Développement d'une IHM en C#</span>
+                                        <span class="FRcontent">Development of an HCI in C#</span>
+                                    </h3>
                                     <p>
-                                        Projet de développement d'une IHM permettant d'afficher de manière "responsive" du texte ou une image sur un dispositif holographique.<BR><BR>
-                                        Développement en parallèle d'un service Windows permettant de fermer le programme lorsque les performances de la machine sont critiques. Les performances de la machine étant stockées régulièrement dans une base de données sous SQL Server.
+                                        <span class="FRcontent">Projet de développement d'une IHM permettant d'afficher de manière "responsive" du texte ou une image sur un dispositif holographique.<BR><BR>
+                                        Développement en parallèle d'un service Windows permettant de fermer le programme lorsque les performances de la machine sont critiques. Les performances de la machine étant stockées régulièrement dans une base de données sous SQL Server.</span>
+                                        <span class="ENcontent">HCI development in C# with the aim to display with responsiveness some text and pictures on an holographic device.<BR><BR>
+                                        In parallel : Development of a windows service shuting down the application if the computer performances are critical. These performances are stored in a SQL server database.</span>
                                     </p>
                                     <p>
                                         <a href="images/redx.png" data-lightbox="redx" data-title="Schéma explicatif des fonctionnalités du logiciel">
-                                            <button class="btn btn-block">Agrandir l'image / Voir Plus...</button>
+                                            <button class="btn btn-block">
+                                                <span class="FRcontent">Agrandir l'image / Voir Plus...</span>
+                                                <span class="ENcontent">See more pictures...</span>
+                                            </button>
                                         </a>
                                         <a href="images/redxworkflow.png" data-lightbox="redx" data-title="Workflow du fonctionnement interne du logiciel"></a>
                                     </p>
@@ -511,14 +630,22 @@
                                     <img src="images/bdd.png" class="img-responsive img-center auto-resize" alt="icon">
                                 </a>
                                 <div class="caption">
-                                    <h3>Conception, Implémentation et Exploitation d'une base de données</h3>
+                                    <h3>
+                                        <span class="FRcontent">Conception, Implémentation et Exploitation d'une base de données</span>
+                                        <span class="ENcontent">Design, implementation and exploitation of a MySQL database</span>
+                                    </h3>
                                     <p>
-                                        Projet visant à exploiter des données collectées sur l'ensemble des actions des joueurs d'une équipe de football sur plusieurs matchs.<BR><BR>
-                                        La phase de conception a été réalisée à l'aide de la méthode Merise pour ensuite pouvoir construire notre base et exploiter les données grâce à des requêtes et procédures stockées.
+                                        <span class="FRcontent">Projet visant à exploiter des données collectées sur l'ensemble des actions des joueurs d'une équipe de football sur plusieurs matchs.<BR><BR>
+                                        La phase de conception a été réalisée à l'aide de la méthode Merise pour ensuite pouvoir construire notre base et exploiter les données grâce à des requêtes et procédures stockées.</span>
+                                        <span class="ENcontent">Project with the aim of exploiting the data related to some actions collected on an entire football team for several matches.<BR><BR>
+                                        The design phase was performed with the help of the Merise methodology to make at the end SQL requests and stored procedures.</span>
                                     </p>
                                     <p>
                                         <a href="images/bdd.png" data-lightbox="bdd" data-title="Architecture de notre base de données">
-                                            <button class="btn btn-block">Agrandir l'image / Voir Plus...</button>
+                                            <button class="btn btn-block">
+                                                <span class="FRcontent">Agrandir l'image / Voir Plus...</span>
+                                                <span class="ENcontent">See more pictures...</span>
+                                            </button>
                                         </a>
                                         <a href="images/bddmcd.png" data-lightbox="bdd" data-title="Modèle conceptuel des données (MCD)"></a>
                                         <a href="images/bddmld.png" data-lightbox="bdd" data-title="Modèle logique des données (MLD)"></a>
@@ -532,14 +659,22 @@
                                     <img src="images/robotique.png" class="img-responsive img-center auto-resize" alt="icon">
                                 </a>
                                 <div class="caption">
-                                    <h3>Conception d'un véhicule autoguidé en Lego</h3>
+                                    <h3>
+                                        <span class="FRcontent">Conception d'un véhicule autoguidé en Lego</span>
+                                        <span class="ENcontent">Creation of a self-guided vehicle with Lego</span>
+                                    </h3>
                                     <p>
-                                        Projet divisé et réparti sur plusieurs mois. Il visait à concevoir de A à Z un robot pouvant se déplacer de manière autonome à l'aide de 3 algorithmes pour remporter 3 épreuves différentes.<BR><BR>
-                                        L'objectif de ce projet était d'acquérir des connaissances en cinétique, cinématique, électronique, énergétique, algorithmique ansi qu'en langage C utilisé avec le contrôleur Arduino.
+                                        <span class="FRcontent">Projet divisé et réparti sur plusieurs mois. Il visait à concevoir de A à Z un robot pouvant se déplacer de manière autonome à l'aide de 3 algorithmes pour remporter 3 épreuves différentes.<BR><BR>
+                                        L'objectif de ce projet était d'acquérir des connaissances en cinétique, cinématique, électronique, énergétique, algorithmique ansi qu'en langage C utilisé avec le contrôleur Arduino.</span>
+                                        <span class="ENcontent">Projet divided in several parts of the year. The aim was to design from A to Z a robot able to move autonomously with 3 different algorithms to win 3 different challenges.<BR><BR>
+                                        The aim of this project was to gain some knowledge in kinetics, kinematics, electronics, energetics, algorithmic and also in C language used with an Arduino controller.</span>
                                     </p>
                                     <p>
                                         <a href="images/robotique.png" data-lightbox="robot" data-title="Fiche technique de notre robot">
-                                            <button class="btn btn-block">Agrandir l'image / Voir Plus...</button>
+                                            <button class="btn btn-block">
+                                                <span class="FRcontent">Agrandir l'image / Voir Plus...</span>
+                                                <span class="ENcontent">See more pictures...</span>
+                                            </button>
                                         </a>
                                     </p>
                                 </div>
@@ -555,31 +690,25 @@
                         <img src="images/hobbies.png" class="img-center" alt="icon">
                     </div>
                     <div class="row">
-                        <h2 id="loisirs">Loisirs :</h2>
+                        <h2 id="loisirs">
+                            <span class="FRcontent">Loisirs :</span>
+                            <span class="ENcontent">Hobbies :</span>
+                        </h2>
                     </div>
                     <div class="row vertical-align panel-body">
-                        <div class="col-xs-12 col-sm-3">
-                            <img src="images/telescope.png" class="img-responsive img-center auto-resize logocertif" alt="icon">
-                        </div>
-                        <div class="col-xs-12 col-sm-9">
-                            <h4 class="text22">
-                                Astronomie
-                            </h4>
-                            <p class="text18">
-                                Je m'intéresse à l'astronomie et observe régulièrement le ciel en particulier lorsque des objets insolites sont visibles.
-                                C'est un loisir que je pratique déjà depuis quelques mois, et qui me pasionne de plus en plus.
-                            </p>
-                        </div>
                         <div class="col-xs-12 col-sm-3">
                             <img src="images/climbing.png" class="img-responsive img-center auto-resize logocertif" alt="icon">
                         </div>
                         <div class="col-xs-12 col-sm-9">
                             <h4 class="text22">
-                                Sports de Montagne
+                                <span class="FRcontent">Sports de Montagne</span>
+                                <span class="ENcontent">Mountain Sports</span>
                             </h4>
                             <p class="text18">
-                                J'ai la chance d'avoir, dès mon plus jeune âge, découvert la montagne et ses activités. Si bien qu'aujourd'hui, celle-ci représente une passion pour moi.<BR>
-                                J'ai déjà eu l'occasion d'organiser avec des amis des randonnées itinérantes de plusieurs jours afin de découvrir d'autres paysages et lieux reculés.
+                                <span class="FRcontent">J'ai la chance d'avoir, dès mon plus jeune âge, découvert la montagne et ses activités. Si bien qu'aujourd'hui, celle-ci représente une passion pour moi.<BR>
+                                J'ai déjà eu l'occasion d'organiser avec des amis des randonnées itinérantes de plusieurs jours afin de découvrir d'autres paysages et lieux reculés.</span>
+                                <span class="ENcontent">Since I was young, I had the opportunity to discover the mountain and its activities. So much that it has become a real passion for me.<BR>
+                                I already had the occasion to organize with my friend some hikes of several days to discover new landscapes and remote places.</span>
                             </p>
                         </div>
                         <div class="col-xs-12 col-sm-3">
@@ -587,10 +716,26 @@
                         </div>
                         <div class="col-xs-12 col-sm-9">
                             <h4 class="text22">
-                                Saxophone
+                                <span class="FRcontent ENcontent">Saxophone</span>
                             </h4>
                             <p class="text18">
-                                Je joue du saxophone depuis maintenant plus d'une dizaine d'année. J'ai eu l'occasion de jouer en groupe très souvent (Orchestre, Harmonie, autre...) et donc participer à de multiples manifestations.
+                                <span class="FRcontent">Je joue du saxophone depuis maintenant plus d'une dizaine d'année. J'ai eu l'occasion de jouer en groupe très souvent (Orchestre, Harmonie, autre...) et donc participer à de multiples manifestations.</span>
+                                <span class="ENcontent">I play the saxophone since more than 10 years now. I had the occasion to play in group (orchestras, harmonies). In this way, I had the occasion to play very often in concerts, parades etc...</span>
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-3">
+                            <img src="images/telescope.png" class="img-responsive img-center auto-resize logocertif" alt="icon">
+                        </div>
+                        <div class="col-xs-12 col-sm-9">
+                            <h4 class="text22">
+                                <span class="FRcontent">Astronomie</span>
+                                <span class="ENcontent">Astronomy</span>
+                            </h4>
+                            <p class="text18">
+                                <span class="FRcontent">Je m'intéresse à l'astronomie et observe régulièrement le ciel en particulier lorsque des objets insolites sont visibles.
+                                C'est un loisir que je pratique déjà depuis quelques mois, et qui me pasionne de plus en plus.</span>
+                                <span class="ENcontent">I am very interested in astronomy whitch lead me to observe the sky very often when there are unusual things to see.
+                                It is a hobby that I practise already since a few months and to which I am more and more passionate about.</span>
                             </p>
                         </div>
                         <div class="col-xs-12 col-sm-3">
@@ -598,11 +743,14 @@
                         </div>
                         <div class="col-xs-12 col-sm-9">
                             <h4 class="text22">
-                                Jeux-Vidéos
+                                <span class="FRcontent">Jeux-Vidéos</span>
+                                <span class="ENcontent">Video-Games</span>
                             </h4>
                             <p class="text18">
-                                Vous vous en serez douté, il est difficile de ne pas aimer les jeux-vidéos lorsque l'on aime l'informatique.<BR>
-                                J'aime jouer à toutes sortes de jeu dès lors que je suis avec d'autres amis. C'est le fait de jouer à plusieurs qui me motive principalement.
+                                <span class="FRcontent">Vous vous en serez douté, il est difficile de ne pas aimer les jeux-vidéos lorsque l'on aime l'informatique.<BR>
+                                J'aime jouer à toutes sortes de jeu dès lors que je suis avec d'autres amis. C'est le fait de jouer à plusieurs qui me motive principalement.</span>
+                                <span class="ENcontent">As you may think, it is very hard not to like playing video-games when you like IT.<BR>
+                                I like playing many kinds of games from the moment when I am with friends as I am motivated by the fact that I am playing in team.</span>
                             </p>
                         </div>
                         <div class="col-xs-12 col-sm-3">
@@ -613,8 +761,10 @@
                                 Lecture
                             </h4>
                             <p class="text18">
-                                Bien que délaissée ces derniers temps, j'ai un grand intérêt pour la lecture. Il suffit qu'un livre ou une série de livres me plaise, et me voilà reparti pour des soirées entières de lecture.
-                                J'aime lire énormément de genres différents, notamment les romans policiers de Franck Thilliez, l'héroïque-fantaisie ou encore la science-fiction.
+                                <span class="FRcontent">Bien que délaissée ces derniers temps, j'ai un grand intérêt pour la lecture. Il suffit qu'un livre ou une série de livres me plaise, et me voilà reparti pour des soirées entières de lecture.
+                                J'aime lire énormément de genres différents, notamment les romans policiers de Franck Thilliez, l'héroïque-fantaisie ou encore la science-fiction.</span>
+                                <span class="ENcontent">Even if I have quite abandoned reading these days, I still love reading books that I like many hours in a row when I have some time.
+                                I like reading many kinds of books : mainly detective novels, heroic-fantasy or science-fiction books.</span>
                             </p>
                         </div>
                     </div>
@@ -624,7 +774,6 @@
     </div>
         <footer>
             <p>
-
             </p>
         </footer>
 
