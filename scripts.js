@@ -20,7 +20,7 @@ function setDay ()
         shadow[i].style.boxShadow="0.2em 0.2em #CCC";
     }
     document.getElementById("btnVision").value = "Jour";
-    document.getElementById("imgVision").src = "bootstrap-3.3.7-dist/fonts/glyphicons/glyphicons-232-sun.png";
+    document.getElementById("imgVision").src = "bootstrap-3.3.7-dist/fonts/glyphicons/glyphicons-231-moon.png";
 }
 
 function setNight()
@@ -52,7 +52,7 @@ function setNight()
         // glyph[i].style.color="black";
     }
     document.getElementById("btnVision").value = "Nuit";
-    document.getElementById("imgVision").src = "bootstrap-3.3.7-dist/fonts/glyphicons/glyphicons-231-moon.png";
+    document.getElementById("imgVision").src = "bootstrap-3.3.7-dist/fonts/glyphicons/glyphicons-232-sun.png";
 }
 
 function changeVision()
