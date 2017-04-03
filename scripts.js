@@ -88,7 +88,7 @@ function setEnglish()
     $(".ENcontent").show();
 
     document.getElementById("btnlanguage").value = "EN";
-    document.getElementById("imgLanguage").src = "images/EN.png"
+    document.getElementById("imgLanguage").src = "images/FR.png"
 }
 function setFrench()
 {
@@ -96,5 +96,5 @@ function setFrench()
     $(".FRcontent").show();
 
     document.getElementById("btnlanguage").value = "FR";
-    document.getElementById("imgLanguage").src = "images/FR.png"
+    document.getElementById("imgLanguage").src = "images/EN.png"
 }
