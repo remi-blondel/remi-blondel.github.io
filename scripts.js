@@ -20,7 +20,7 @@ function setDay ()
         shadow[i].style.boxShadow="0.2em 0.2em #CCC";
     }
     document.getElementById("btnVision").value = "Jour";
-    document.getElementById("btnVision").innerText = "Nuit";
+    document.getElementById("imgVision").src = "bootstrap-3.3.7-dist/fonts/glyphicons/glyphicons-232-sun.png";
 }
 
 function setNight()
@@ -52,7 +52,7 @@ function setNight()
         // glyph[i].style.color="black";
     }
     document.getElementById("btnVision").value = "Nuit";
-    document.getElementById("btnVision").innerText = "Jour";
+    document.getElementById("imgVision").src = "bootstrap-3.3.7-dist/fonts/glyphicons/glyphicons-231-moon.png";
 }
 
 function changeVision()
@@ -88,7 +88,7 @@ function setEnglish()
     $(".ENcontent").show();
 
     document.getElementById("btnlanguage").value = "EN";
-    document.getElementById("btnlanguage").innerText = "FR";
+    document.getElementById("imgLanguage").src = "images/EN.png"
 }
 function setFrench()
 {
@@ -96,5 +96,5 @@ function setFrench()
     $(".FRcontent").show();
 
     document.getElementById("btnlanguage").value = "FR";
-    document.getElementById("btnlanguage").innerText = "EN";
+    document.getElementById("imgLanguage").src = "images/FR.png"
 }

@@ -48,8 +48,10 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <button id="btnVision" type="button" value="Jour" class="btn btn-default navbar-btn" onclick="changeVision()"><span id="visionMode">Nuit</span></button>
-                            <button id="btnlanguage" type="button" value="FR" class="btn btn-default navbar-btn" onclick="changeLanguage()"><span id="language">EN</span></button>
+                            <div class="btn-group" role="navbarbtn">
+                                <button id="btnVision" type="button" value="Jour" class="btn btn-default navbar-btn" onclick="changeVision()"><img id="imgVision" src="bootstrap-3.3.7-dist/fonts/glyphicons/glyphicons-232-sun.png"><!--<span id="visionMode">Nuit</span>--></button>
+                                <button id="btnlanguage" type="button" value="FR" class="btn btn-default navbar-btn" onclick="changeLanguage()"><img id="imgLanguage" src="images/FR.png"></button>
+                            </div>
                         </li>
                     </ul>
                 </div>
