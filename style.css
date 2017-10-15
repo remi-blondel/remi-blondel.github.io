@@ -120,6 +120,11 @@ header
     color: black;
 }
 
+.underlined
+{
+    text-decoration: underline;
+}
+
 .panel-title
 {
     padding-bottom: 15px;
