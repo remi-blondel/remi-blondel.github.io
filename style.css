@@ -39,8 +39,8 @@ body
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    margin: auto;
     padding: 10px;
+    margin-bottom: 40px;
 }
 
 #name
