@@ -136,6 +136,8 @@ header
 {
     background-color: #2e6da4;
 }
+.panel-default > .panel-heading-custom {
+    background: #2e6da4; color: #2e6da4; }
 
 .rubrique h4
 {
