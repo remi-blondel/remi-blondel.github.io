@@ -251,11 +251,11 @@ des colonnes de même hauteur
 
 .FRcontent
 {
-    display: block;
+    display: none;
 }
 .ENcontent
 {
-    display: none;
+    display: block;
 }
 
 @media (max-width: 850px)
