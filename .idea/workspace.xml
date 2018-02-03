@@ -23,8 +23,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="373" column="98" lean-forward="false" selection-start-line="373" selection-start-column="98" selection-end-line="373" selection-end-column="98" />
+            <state relative-caret-position="437">
+              <caret line="382" column="189" lean-forward="true" selection-start-line="382" selection-start-column="189" selection-end-line="382" selection-end-column="189" />
               <folding />
             </state>
           </provider>
@@ -114,11 +114,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -314,11 +313,12 @@
       <workItem from="1515860030832" duration="293000" />
       <workItem from="1516577394143" duration="630000" />
       <workItem from="1516651771800" duration="234000" />
+      <workItem from="1517675710259" duration="1140000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="278621000" />
+    <option name="totallyTimeSpent" value="279761000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -330,9 +330,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.096875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="614" y="125" width="233" height="897" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19415449" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="614" y="125" width="233" height="897" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1599099" sideWeight="0.50417536" order="7" side_tool="true" content_ui="tabs" />
@@ -778,8 +779,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="373" column="98" lean-forward="false" selection-start-line="373" selection-start-column="98" selection-end-line="373" selection-end-column="98" />
+        <state relative-caret-position="437">
+          <caret line="382" column="189" lean-forward="true" selection-start-line="382" selection-start-column="189" selection-end-line="382" selection-end-column="189" />
           <folding />
         </state>
       </provider>
