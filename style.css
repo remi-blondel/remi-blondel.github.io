@@ -9,7 +9,8 @@
 
 body
 {
-    padding-top: 50px;
+    overflow-x:hidden;
+    margin-top: 50px;
     font-family: "Trebuchet MS";
     background-color: whitesmoke;
 }
@@ -17,11 +18,11 @@ body
 {
     text-align: center;
     background-size: cover;
+    margin-top: 20px;
 }
 .topannel1
 {
-    background-image: url("images/initialbackground.jpg");
-    padding-bottom: 180px;
+    background-image: url("images/initialbackground2.jpg");
 }
 .topannel2
 {
@@ -32,15 +33,15 @@ body
 .contactpannel ul
 {
     font-weight: bold;
-    background-color: #2aabd2;
+    background-color: #2860906b;
     list-style: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
-    margin-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #name
@@ -87,7 +88,7 @@ header
 {
     background-color: white;
     padding: 2%;
-    margin: 3%;
+    margin: 50px;
     box-shadow: 0.2em 0.2em #CCC
 }
 #global

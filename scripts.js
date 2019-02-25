@@ -35,7 +35,7 @@ function setNight()
     var container = document.getElementsByClassName("containerlevel1");
     for(var i=0 ; i < container.length ; i++)
     {
-        container[i].style.backgroundColor="slategrey";
+        container[i].style.backgroundColor="#8f99a0";
     }
 
     //Couleur des ombres de conteneurs
