@@ -117,6 +117,21 @@ header
     padding: 3%;
 }
 
+.paddingtop20
+{
+    padding-top: 20px;
+}
+
+.margin5
+{
+    margin: 5px;
+}
+
+.content-center
+{
+    flex: 1%;
+}
+
 .l3content
 {
     padding-left: 3%;
